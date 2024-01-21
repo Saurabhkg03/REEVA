@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app-container">
+        <div class="app-header">
+          <div class="app-header-left">
+            <span class="app-icon"></span>
+            <p class="app-name">REEVA</p>
+            
+          </div>
+          <div class="app-header-right">
+            <button class="mode-switch" title="Switch Theme">
+              <svg class="moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="24" height="24" viewBox="0 0 24 24">
+                <defs></defs>
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+              </svg>
+            </button>
+            
+            <button class="notification-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                <path d="M13.73 21a2 2 0 0 1-3.46 0" /></svg>
+            </button>
+            <button class="profile-btn">
+              <img src="https://assets.codepen.io/3306515/IMG_2025.jpg" />
+              <span>Aybüke C.</span>
+            </button>
+          </div>
+          <button class="messages-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" /></svg>
+          </button>
+        </div>
+        <style>
+            .projects-section {
+              max-height: 1500px; /* Adjust the max-height as needed */
+              overflow-y: auto; /* Enables vertical scrollbar if the content overflows */
+            }
+          </style>
+
+        <div class="projects-section">
+            <main>
+                <div class="container">
+                    
+                    <div class="img" style="    background-image: linear-gradient(150deg, rgba(63, 174, 255, .3)15%, rgba(63, 174, 255, .3)70%, rgba(63, 174, 255, .3)94%), url(https://bootdey.com/img/Content/flores-amarillas-wallpaper.jpeg);height: 350px;background-size: cover;"></div>
+                    <div class="card social-prof">
+                        <div class="card-body">
+                            <div class="wrapper">
+                                <img src="https://img.freepik.com/premium-photo/fun-3d-cartoon-illustration-indian-doctor_183364-114218.jpg?size=626&ext=jpg&ga=GA1.1.1357067277.1699362632&semt=ais" alt="" class="user-profile">
+                                <h3></h3>
+                                <p>Web Developer</p>
+                            </div>
+                            <div class="row ">
+                                <div class="col-lg-12">
+                                    <!-- <ul class=" nav nav-tabs justify-content-center s-nav">
+                                        <li><a class="active" href="#">Timeline</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Friends</a></li>
+                                        <li><a href="#">Photos</a></li>
+                                        <li><a href="#">Videos</a></li>
+                                    </ul> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </main>
+
+          
+
+<div class="faq-section">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 30px;">Details of Culinary Scientist Career</h2>
+
+        
+        <!-- <div class="faq-item" onclick="toggleAnswer('faq1')">
+            <h3 class="faq-question">Description:</h3>
+            <p class="faq-answer" id="faq1-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out;">Culinary scientists are professionals who bridge the gap between culinary arts and food science. They apply scientific principles to the creation, development, and improvement of food products, ensuring quality, safety, and nutritional value. Their work involves understanding the chemistry, biology, and physics of food, as well as culinary techniques and flavors.</p>
+        </div>
+
+        
+        <div class="faq-item" onclick="toggleAnswer('faq2')">
+            <h3 class="faq-question">Education:</h3>
+            <p class="faq-answer" id="faq2-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out;">Bachelor's Degree: Pursue a bachelor's degree in Food Science, Culinary Science, or a related field. Relevant coursework includes food chemistry, microbiology, nutrition, and culinary arts.
+
+                <br>Optional Internship: Gain hands-on experience through internships in food laboratories, research institutions, or culinary establishments.
+                
+                <br> Master's or Ph.D. (Optional): Advanced degrees can enhance career prospects and may be required for research or academic positions.</p>
+        </div>
+
+        
+        <div class="faq-item" onclick="toggleAnswer('faq3')">
+            <h3 class="faq-question">Eligibility Criteria:</h3>
+            <p class="faq-answer" id="faq3-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out;">A strong background in science, particularly in subjects like chemistry, biology, and physics.
+                <br>Good culinary skills and a passion for food.
+                <br> Strong analytical and problem-solving skills.
+                <br>Attention to detail and the ability to work in a laboratory setting.</p>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer('faq4')">
+            <h3 class="faq-question">Estimated Cost:</h3>
+            <p class="faq-answer" id="faq4-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out;">Bachelor's Degree:
+
+                <br> Tuition and Fees: ₹50,000 to ₹1,50,000 per year
+                <br> Books and Supplies: ₹5,000 per year
+                <br>Accommodation: ₹8,000 to ₹15,000 per year
+                <br> Miscellaneous Expenses: ₹3,000 per year
+                <br>Total Estimated Cost for a 4-year Bachelor's Degree:
+                <br> ₹2,20,000 to ₹6,20,000
+                
+                <br><br>Optional Internship:
+                
+                <br> Travel and Living Expenses: ₹10,000 for a 3-month internship
+                <br> Master's or Ph.D. (Optional):
+                
+                <br><br>Tuition and Fees: ₹70,000 to ₹2,00,000 per year
+                <br>Research Expenses: ₹10,000 per year
+                <br> Accommodation: ₹12,000 to ₹25,000 per year
+                <br>Miscellaneous Expenses: ₹5,000 per year
+                <br>Total Estimated Cost for a 2-year Master's Degree or 4 to 6-year Ph.D.:
+                <br> ₹2,25,000 to ₹7,70,000
+                
+                <br><br>Total Estimated Cost for Education and Internship in India:
+                <br>₹4,55,000 to ₹14,00,000
+                
+                <br> Please note that these figures are fictional and provided for illustrative purposes only. The actual costs can vary, and students are encouraged to research specific institutions, programs, and scholarship opportunities for accurate and up-to-date information. Additionally, various scholarships and financial aid options are available for students in India to help cover their educational expenses.</p>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer('faq5')">
+            <h3 class="faq-question">Jobs Available:</h3>
+            <p class="faq-answer" id="faq5-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out;">Food Product Developer
+                <br>Research and Development Scientist
+                <br> Quality Assurance Specialist
+                <br>Flavorist
+                <br> Culinary Research Chef
+                <br>Food Safety Specialist</p>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer('faq6')">
+            <h3 class="faq-question">Salary Ranges:</h3>
+            <p class="faq-answer" id="faq6-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out;">Salaries can vary based on factors like experience, location, and the employer.
+                <br> Entry-level positions: ₹3,00,000 to ₹5,00,000 per annum
+                <br> Mid-level positions: ₹6,00,000 to ₹10,00,000 per annum
+                <br>Experienced professionals or those in managerial roles: ₹10,00,000 and above per annum</p>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer('faq7')">
+            <h3 class="faq-question">Responsibilities:</h3>
+            <p class="faq-answer" id="faq7-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out;">Developing new food products.
+                <br> Conducting sensory evaluations and quality control.
+                <br> Collaborating with chefs and culinary teams.
+                <br> Ensuring compliance with food safety regulations.
+                <br>Conducting research on food ingredients and processing techniques.</p>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer('faq8')">
+            <h3 class="faq-question">Scholarships and National Schemes in India:</h3>
+            <p class="faq-answer" id="faq8-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out;">National Overseas Scholarship for Scheduled Castes: Provides financial assistance to students belonging to Scheduled Castes for pursuing higher studies abroad.
+
+                <br> National Fellowship and Scholarship for Higher Education of ST Students: A scholarship scheme for Scheduled Tribe students pursuing higher education.
+                
+                <br> DBT Junior Research Fellowship (JRF): Department of Biotechnology offers fellowships for research in various fields, including food science.
+                
+                <br>UGC NET JRF: Qualified candidates can avail Junior Research Fellowship for pursuing research in subjects including food science.
+                
+                <br>State-specific Schemes: Many Indian states offer scholarships and financial assistance for higher education. Check with respective state authorities.
+                
+                <br> It's essential to stay updated on scholarship opportunities and national schemes by regularly checking official government websites and scholarship portals. Additionally, networking with professionals in the field and participating in relevant conferences or workshops can open up opportunities for financial support and career advancement.</p>
+        </div> -->
+
+        <style>
+            .faq-item {
+                cursor: pointer;
+                margin-bottom: 20px;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+    
+            .faq-question {
+                color: #333;
+                margin-bottom: 10px;
+            }
+    
+            .faq-answer {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-out;
+                color: #555;
+            }
+    
+            .faq-answer span {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="faq-item" onclick="toggleAnswer('faq1')">
+            <h3 class="faq-question">Description:</h3>
+            <p class="faq-answer" id="faq1-answer">
+                <span style="color: #FF69B4;">Culinary scientists</span> are professionals who bridge the gap between culinary arts
+                and food science. They apply scientific principles to the creation, development, and improvement of food products,
+                ensuring quality, safety, and nutritional value. Their work involves understanding the chemistry, biology, and physics
+                of food, as well as culinary techniques and flavors.
+            </p>
+        </div>
+    
+        <div class="faq-item" onclick="toggleAnswer('faq2')">
+            <h3 class="faq-question">Education:</h3>
+            <p class="faq-answer" id="faq2-answer">
+                <span style="color: #FF6347;">Bachelor's Degree:</span> Pursue a bachelor's degree in <span style="color: #FF6347;">Food Science</span>,
+                Culinary Science, or a related field. Relevant coursework includes food chemistry, microbiology, nutrition, and culinary
+                arts. <br>
+                <span style="color: #20B2AA;">Optional Internship:</span> Gain hands-on experience through internships in food laboratories,
+                research institutions, or culinary establishments. <br>
+                <span style="color: #FF6347;">Master's or Ph.D. (Optional):</span> Advanced degrees can enhance career prospects and may be
+                required for research or academic positions.
+            </p>
+        </div>
+    
+        <div class="faq-item" onclick="toggleAnswer('faq3')">
+            <h3 class="faq-question">Eligibility Criteria:</h3>
+            <p class="faq-answer" id="faq3-answer">
+                A strong background in <span style="color: #1E90FF;">science</span>, particularly in subjects like chemistry, biology, and physics. <br>
+                Good culinary skills and a <span style="color: #1E90FF;">passion for food</span>. <br>
+                Strong analytical and problem-solving skills. <br>
+                Attention to detail and the ability to work in a <span style="color: #1E90FF;">laboratory setting</span>.
+            </p>
+        </div>
+    
+        <div class="faq-item" onclick="toggleAnswer('faq4')">
+            <h3 class="faq-question">Estimated Cost:</h3>
+            <p class="faq-answer" id="faq4-answer">
+                <span style="color: #FF6347;">Bachelor's Degree:</span> <br>
+                Tuition and Fees: ₹50,000 to ₹1,50,000 per year <br>
+                Books and Supplies: ₹5,000 per year <br>
+                Accommodation: ₹8,000 to ₹15,000 per year <br>
+                Miscellaneous Expenses: ₹3,000 per year <br>
+                Total Estimated Cost for a 4-year Bachelor's Degree: ₹2,20,000 to ₹6,20,000 <br> <br>
+    
+                <span style="color: #20B2AA;">Optional Internship:</span> <br>
+                Travel and Living Expenses: ₹10,000 for a 3-month internship <br> <br>
+    
+                <span style="color: #FF6347;">Master's or Ph.D. (Optional):</span> <br>
+                Tuition and Fees: ₹70,000 to ₹2,00,000 per year <br>
+                Research Expenses: ₹10,000 per year <br>
+                Accommodation: ₹12,000 to ₹25,000 per year <br>
+                Miscellaneous Expenses: ₹5,000 per year <br>
+                Total Estimated Cost for a 2-year Master's Degree or 4 to 6-year Ph.D.: ₹2,25,000 to ₹7,70,000 <br> <br>
+    
+                Total Estimated Cost for Education and Internship in India: ₹4,55,000 to ₹14,00,000 <br> <br>
+    
+                <span style="color: #555;">Please note that these figures are fictional and provided for illustrative purposes
+                    only. The actual costs can vary, and students are encouraged to research specific institutions, programs, and
+                    scholarship opportunities for accurate and up-to-date information. Additionally, various scholarships and financial
+                    aid options are available for students in India to help cover their educational expenses.</span>
+            </p>
+        </div>
+    
+        <div class="faq-item" onclick="toggleAnswer('faq5')">
+            <h3 class="faq-question">Jobs Available:</h3>
+            <p class="faq-answer" id="faq5-answer">
+                Food Product Developer <br>
+                Research and Development Scientist <br>
+                Quality Assurance Specialist <br>
+                Flavorist <br>
+                Culinary Research Chef <br>
+                Food Safety Specialist
+            </p>
+        </div>
+    
+        <div class="faq-item" onclick="toggleAnswer('faq6')">
+            <h3 class="faq-question">Salary Ranges:</h3>
+            <p class="faq-answer" id="faq6-answer">
+                Salaries can vary based on factors like experience, location, and the employer. <br>
+                Entry-level positions: ₹3,00,000 to ₹5,00,000 per annum <br>
+                Mid-level positions: ₹6,00,000 to ₹10,00,000 per annum <br>
+                Experienced professionals or those in managerial roles: ₹10,00,000 and above per annum
+            </p>
+        </div>
+    
+        <div class="faq-item" onclick="toggleAnswer('faq7')">
+            <h3 class="faq-question">Responsibilities:</h3>
+            <p class="faq-answer" id="faq7-answer">
+                Developing new food products. <br>
+                Conducting sensory evaluations and quality control. <br>
+                Collaborating with chefs and culinary teams. <br>
+                Ensuring compliance with food safety regulations. <br>
+                Conducting research on food ingredients and processing techniques.
+            </p>
+        </div>
+    
+        <div class="faq-item" onclick="toggleAnswer('faq8')">
+            <h3 class="faq-question">Scholarships and National Schemes in India:</h3>
+            <p class="faq-answer" id="faq8-answer">
+                <span style="color: #20B2AA;">National Overseas Scholarship for Scheduled Castes:</span> Provides financial assistance to students
+                belonging to Scheduled Castes for pursuing higher studies abroad. <br>
+                <span style="color: #20B2AA;">National Fellowship and Scholarship for Higher Education of ST Students:</span> A scholarship scheme
+                for Scheduled Tribe students pursuing higher education. <br>
+                <span style="color: #20B2AA;">DBT Junior Research Fellowship (JRF):</span> Department of Biotechnology offers fellowships for
+                research in various fields, including food science. <br>
+                <span style="color: #20B2AA;">UGC NET JRF:</span> Qualified candidates can avail Junior Research Fellowship for pursuing research
+                in subjects including food science. <br>
+                <span style="color: #20B2AA;">State-specific Schemes:</span> Many Indian states offer scholarships and financial assistance for
+                higher education. Check with respective state authorities. <br>
+                It's essential to stay updated on scholarship opportunities and national schemes by regularly checking official government
+                websites and scholarship portals. Additionally, networking with professionals in the field and participating in relevant
+                conferences or workshops can open up opportunities for financial support and career advancement.
+            </p>
+        </div>
+    
+        <script>
+            function toggleAnswer(faqId) {
+                var answer = document.getElementById(faqId + '-answer');
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            }
+        </script>
+    </body>
+    
+    </html>
+
+        
+
+    </div>
+</div>
+
+<style>
+    /* Styling for Section */
+    .faq-section {
+        background-color: #f8f8f8;
+        padding: 50px 0;
+    }
+
+    .faq-item {
+        background-color: #fff;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    .faq-question {
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+
+    .faq-answer {
+        color: #333;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        font-size: 20px;
+    }
+</style>
+
+<script>
+    function toggleAnswer(faqId) {
+        var answer = document.getElementById(faqId + '-answer');
+        if (answer.style.maxHeight === '0px') {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+        } else {
+            answer.style.maxHeight = '0';
+        }
+    }
+</script>
+
+    
+      </div>
+      </div>
+      </div>
+    </div>
+    
+</body>
+</html>
+
+
