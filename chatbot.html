@@ -5,6 +5,7 @@
   <title>REEVA</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./chatstyle.css">
 
 </head>
 <body>
@@ -41,11 +42,10 @@
   </div>
   <div class="app-content">
     <div class="app-sidebar">
-      <a href="index.html" class="app-sidebar-link active">
+      <a href="index.html" class="app-sidebar-link">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
           <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
           <polyline points="9 22 9 12 15 12 15 22" /></svg>
-          
           <span class="link-name">Home</span>
       </a>
       <a href="profile.html" class="app-sidebar-link">
@@ -55,7 +55,7 @@
         </svg>
         <span class="link-name">Profile</span>
       </a>
-      <a href="chatbot.html" class="app-sidebar-link">
+      <a href="chatbot.html" class="app-sidebar-link active">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
           <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
           <line x1="16" y1="2" x2="16" y2="6" />
@@ -63,15 +63,22 @@
           <line x1="3" y1="10" x2="21" y2="10" /></svg>
           <span class="link-name">ChatBot</span>
       </a>
+      <a href="courses.html" class="app-sidebar-link">
+        <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-settings" viewBox="0 0 24 24">
+          <defs />
+          <circle cx="12" cy="12" r="3" />
+          <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
+        </svg>
+        <span class="link-name">Courses</span>
+      </a>
 
-
-
-
-
+      
     </div>
     <div class="projects-section">
+
+
       <div class="projects-section-header">
-        <p>Aptitude Tests</p>
+        <p>ChatBot</p>
         <div class="view-actions">
           <button class="view-btn list-view" title="List View">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list">
@@ -96,59 +103,53 @@
           
         </div>
         
+      <div style="background-color: #ff69b4; padding: 15px; border-radius: 10px;">
+        <h2 style="margin: 0; color: #fff;">Welcome to Reeva ChatBot</h2>
+      </div>
       
       <div class="project-boxes jsGridView">
-
-
-        <div class="projects-section">
-
-          <!-- Pink Card -->
-        <div style="display: flex; padding-left: 80px; ">
-         <div style="height:350px; width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #ff98bf; color: #fff; margin-right: 10px;">
-            <img src="https://img.freepik.com/free-photo/pleased-little-schoolboy-sitting-desk-with-school-tools-his-thumb-up-isolated-white-background_141793-63633.jpg?size=626&ext=jpg&ga=GA1.1.1357067277.1699362632&semt=ais" alt="Card Image" style="width: 100%; height: 150px; object-fit: cover;">
-            <div style="padding: 20px;">
-                <h2>Primary Level:</h2>
-                <a href="/quiz-app/index.html" style="background-color: #fff; color: #ff98bf; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">Start Aptitude</a>
+        
+        <div class="container">
+            <div class="chat-container">
+              <div class="chat-module" onscroll="manageChatOverlay()">
+                <div class="thread">
+                  <div class="thread-item">
+                    <div class="avatar-container">
+                      <div class="calliope appearing">
+                        <div class="head">
+                          <div class="eye-left"></div>
+                          <div class="eye-right"></div>
+                        </div>
+                        <div class="torso">
+                          <div class="arm-left"></div>
+                          <div class="arm-right"></div>
+                        </div>
+                        <div class="feet"></div>
+                      </div>
+                    </div>
+                    <div class="response-container">
+                      <div class="reponse">
+                        Hello !
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="scroll-overlay overlay-hidden"></div>
+              <form class="form-prompt" onsubmit="event.preventDefault();sendInput();return false;">
+                <div class="user-prompt-indicator">
+                  >
+                </div>
+                <input autofocus="1" class="user-prompt" data-role="user-input" type="text" />
+                <div class="user-mic-toggle"></div>
+              </form>
             </div>
-         </div>
-    
-        <!-- Purple Card -->
-         <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #9b8cf4; color: #fff; margin-left: 10px;">
-            <img src="https://img.freepik.com/free-photo/people-education-studying-concept_176532-8104.jpg?size=626&ext=jpg&ga=GA1.1.1357067277.1699362632&semt=ais" alt="Card Image" style="width: 100%; height: 150px; object-fit: cover;">
-            <div style="padding: 20px;">
-                <h2>Secondary Level:</h2>
-                <button onclick="buttonClick()" style="background-color: #fff; color: #9b8cf4; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">Start Aptitude</button>
-            </div>
-         </div>
-    
-         <!-- Blue Card -->
-         <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #8ac6f2; color: #fff;margin-left: 20px;">
-            <img src="https://img.freepik.com/free-photo/medium-shot-dreamy-highschool-girl-holding-books-hands_23-2148225363.jpg?size=626&ext=jpg&ga=GA1.1.1357067277.1699362632&semt=ais" alt="Card Image" style="width: 100%; height: 150px; object-fit: cover;">
-            <div style="padding: 20px;">
-                <h2>Higher Secondary:</h2>
-                <button onclick="buttonClick()" style="background-color: #fff; color: #8ac6f2; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">Start Aptitude</button>
-            </div>
-         </div>
-    
-         <!-- Orange Card -->
-         <div style="width: 300px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #ffd8a6; color: #fff; margin-left: 20px;">
-            <img src="https://img.freepik.com/free-photo/best-friends-graduation-ceremony-having-fun_23-2148505279.jpg?size=626&ext=jpg&ga=GA1.1.1357067277.1699362632&semt=ais" alt="Card Image" style="width: 100%; height: 150px; object-fit: cover;">
-            <div style="padding: 20px;">
-                <h2>Graduation Level:</h2>
-                <button onclick="buttonClick()" style="background-color: #fff; color: #ffd8a6; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">Start Aptitude</button>
-            </div>
-         </div>
-       </div>
+          </div>
+        
+        
       
-
-
-
-       <script>
-        function buttonClick() {
-            alert('Button clicked!');
-        }
-    </script>
-
+    
+  </div>
 </div>
     </div>
   </div>
@@ -156,6 +157,7 @@
 </div>
 </div>
 <!-- partial -->
+<script src="./chatscript.js"></script>
   <script  src="./script.js"></script>
 
 </body>
